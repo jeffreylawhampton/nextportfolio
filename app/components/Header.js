@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { categories } from "../categories";
+import { categories } from "@/categories";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLock, faLockOpen } from "@fortawesome/free-solid-svg-icons";
 import { usePathname, redirect } from "next/navigation";
