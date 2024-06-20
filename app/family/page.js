@@ -1,4 +1,4 @@
-import PhotoBody from "@/app/components/PhotoBody";
+import PhotoBody from "../components/PhotoBody";
 import { getCloudinaryImages } from "@/lib/getCloudImages";
 import { getSession } from "@/lib";
 import SignIn from "../components/SignIn";

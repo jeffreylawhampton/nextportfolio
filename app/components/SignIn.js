@@ -1,6 +1,6 @@
 "use client";
 import { useFormState } from "react-dom";
-import { signIn } from "../../lib";
+import { signIn } from "@/lib";
 import Image from "next/image";
 
 const SignIn = () => {
