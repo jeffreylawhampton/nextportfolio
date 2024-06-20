@@ -17,14 +17,17 @@
   }
 }
 
+html {
+  min-height: 100vh;
+}
+
 body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  background: white;
+  background-color: white;
+  min-height: 100vh;
 }
 
 @layer utilities {
@@ -43,7 +46,7 @@ body {
   filter: opacity(75%);
   z-index: -1;
   bottom: 0.1em;
-  transition: height 1s ease;
+  transition: all 1s ease;
   border-radius: 2px;
 }
 
@@ -57,7 +60,7 @@ body {
   filter: opacity(90%);
   z-index: -1;
   bottom: 0.1em;
-  transition: height 1s ease;
+  transition: all 1s ease;
   border-radius: 2px;
 }
 
@@ -74,7 +77,6 @@ body {
 .footer-link {
   transition: all 500ms ease;
   border-radius: 3px;
-
   color: black;
 }
 

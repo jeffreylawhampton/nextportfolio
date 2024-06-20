@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "make-passphrase": "node ./scripts/make-passphrase.js",
+    "make-session-secret": "node ./scripts/make-session-secret.js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.2",
@@ -14,12 +16,15 @@
     "@fortawesome/free-regular-svg-icons": "^6.5.2",
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@reflowhq/auth-next": "^2.0.5",
+    "bcryptjs": "^2.4.3",
     "cloudinary": "^2.2.0",
     "next": "14.2.4",
     "next-cloudinary": "^6.6.2",
     "react": "^18",
     "react-dom": "^18",
     "react-photo-album": "^2.4.0",
+    "rooks": "^7.14.1",
     "yet-another-react-lightbox": "^3.20.0"
   },
   "devDependencies": {
