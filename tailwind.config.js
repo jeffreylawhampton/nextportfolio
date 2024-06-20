@@ -23,6 +23,11 @@ module.exports = {
           "sans-serif",
         ],
       },
+      colors: {
+        "dark-blue": "#02364F",
+        "mid-blue": "#126782",
+        "dark-yellow": "#ffb703",
+      },
     },
   },
   plugins: [],

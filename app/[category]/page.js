@@ -4,19 +4,14 @@ import { getCloudinaryImages } from "@/lib/getCloudImages";
 
 export const dynamicParams = false;
 
-export async function generateStaticParams() {
-  return categories.map((category) => ({
-    category: category.name,
+export const generateStaticParams = async () => {
+  return categories.map(({ name }) => ({
+    category: name,
   }));
-}
+};
 
-export default async function Page({ params }) {
-  const { category } = params;
-  const images = await getCloudinaryImages("folder", category);
+const Page = async ({ params: { category } }) => {
+  return <PhotoBody images={await getCloudinaryImages("folder", category)} />;
+};
 
-  return (
-    <div>
-      <PhotoBody images={images} />
-    </div>
-  );
-}
+export default Page;

@@ -1,6 +1,6 @@
 import { CldImage } from "next-cloudinary";
 
-const Image = ({
+const CloudImage = ({
   photo,
   imageProps: { alt, title, className, onClick },
   wrapperStyle,
@@ -22,4 +22,4 @@ const Image = ({
   );
 };
 
-export default Image;
+export default CloudImage;
