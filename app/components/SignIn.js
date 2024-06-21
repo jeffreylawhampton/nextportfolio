@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const SignIn = () => {
   const [state, formAction] = useFormState(signIn, {});
-  console.log(state);
+
   return (
     <form
       action={formAction}
