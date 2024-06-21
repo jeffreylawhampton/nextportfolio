@@ -20,6 +20,9 @@ export async function signIn(prevState, formData = new FormData()) {
 
   const auth = getAuth();
   await auth.set("hasAccess", true);
+  console.log("input phrase", inputPhrase);
+  console.log("hash", HASHED_PASSPHRASE);
+  console.log("auth", auth);
   return { success: true };
 }
 
