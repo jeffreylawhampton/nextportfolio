@@ -1,0 +1,9 @@
+.react-photo-album--photo {
+  filter: opacity(100%);
+  transition: 600ms ease-out;
+}
+
+.react-photo-album--photo:hover {
+  filter: opacity(60%);
+  transition: 300ms ease-in;
+}

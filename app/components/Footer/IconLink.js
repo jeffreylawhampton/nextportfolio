@@ -1,8 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
-const IconLink = (props) => {
-  const { link, title, icon } = props;
+const IconLink = ({ link, title, icon }) => {
   return (
     <Link
       href={link}

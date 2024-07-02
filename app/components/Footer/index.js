@@ -1,14 +1,15 @@
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import IconLink from "./IconLink";
+import "./index.css";
 
 const Footer = () => {
   return (
     <div className="flex justify-between items-center py-6">
-      <div className="text-sm md:text-lg uppercase pt-2">
+      <div className="text-base md:text-lg uppercase pt-2">
         ©2024 Jeff Hampton
       </div>
-      <div className="flex gap-4 lg:gap-6">
+      <div className="flex gap-6">
         <IconLink
           link={"mailto:jeffreylawhampton@gmail.com"}
           title="Email"
