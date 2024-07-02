@@ -8,6 +8,7 @@ const CloudImage = ({
   return (
     <div style={{ ...wrapperStyle, position: "relative" }}>
       <CldImage
+        crossOrigin="anonymous"
         priority={photo.priority}
         height={photo.height}
         loading={photo.priority ? "eager" : "lazy"}
