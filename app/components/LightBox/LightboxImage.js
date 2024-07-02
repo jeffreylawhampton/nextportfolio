@@ -41,6 +41,7 @@ const LightboxImage = ({ slide, offset, rect }) => {
     <div style={{ position: "relative", width, height }}>
       <Image
         fill
+        crossOrigin="anonymous"
         alt={slide.alt}
         src={slide}
         loading="eager"
