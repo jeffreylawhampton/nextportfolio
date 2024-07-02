@@ -6,8 +6,13 @@ export const metadata = {
   description: "My photo portfolio. Hope you like dogs.",
 };
 
-const Home = async () => {
+export const viewport = {
+  initialScale: 1,
+  width: "device-width",
+};
+
+const Page = async () => {
   return <PhotoBody images={await getCloudinaryImages("tags", "featured")} />;
 };
 
-export default Home;
+export default Page;

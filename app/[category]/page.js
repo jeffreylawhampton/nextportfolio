@@ -1,5 +1,5 @@
 import PhotoBody from "../components/PhotoBody";
-import { categories } from "@/categories";
+import { categories } from "@/lib/categories";
 import { getCloudinaryImages } from "@/lib/getCloudImages";
 
 export const dynamicParams = false;

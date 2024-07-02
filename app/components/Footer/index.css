@@ -1,0 +1,43 @@
+.footer-link svg {
+  height: 24px;
+  vertical-align: middle;
+  padding: 3px;
+}
+
+.footer-link {
+  position: relative;
+}
+
+.footer-link::before {
+  content: " ";
+  position: absolute;
+  width: 110%;
+  margin-left: -5%;
+  bottom: 0.1em;
+  height: 0;
+  border-radius: 2px;
+  transition: all 200ms ease;
+}
+
+.footer-link:hover::before,
+.footer-link.active::before {
+  content: " ";
+  height: 0.9em;
+  background-color: var(--yellow);
+  opacity: filter(95%);
+  z-index: -1;
+  transition: height 300ms ease;
+}
+
+.footer-link:active::before {
+  content: "";
+  background-color: var(--yellow2);
+  transition: all 300ms ease;
+}
+
+@media (max-width: 768px) {
+  .footer-link svg {
+    height: 21px;
+    padding: 2px;
+  }
+}

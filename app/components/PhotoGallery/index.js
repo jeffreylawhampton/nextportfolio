@@ -1,7 +1,7 @@
 "use client";
 
 import PhotoAlbum from "react-photo-album";
-import CloudImage from "./CloudImage";
+import CloudImage from "../CloudImage";
 
 const PhotoGallery = ({ photos, layout, openLightbox }) => {
   return (

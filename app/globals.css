@@ -7,6 +7,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --yellow: #f2cd91;
+  --yellow2: #eaac48;
+  --blue1: #5b7e9a;
+  --blue2: #53738d;
+  --blue3: #445e74;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,16 +22,14 @@
   }
 }
 
-html {
-  min-height: 100vh;
+main {
+  min-height: 73vh;
 }
 
 body {
   &::-webkit-scrollbar {
     display: none;
   }
-  background: white;
-  background-color: white;
   min-height: 100vh;
 }
 
@@ -36,64 +39,39 @@ body {
   }
 }
 
-.link.active::before {
-  content: " ";
+.loader {
+  width: 56px;
+  height: 56px;
+  border: 4px solid #66727a;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
   position: absolute;
-  width: 110%;
-  margin-left: -5%;
-  height: 0.7em;
-  background-color: #e79f0d;
-  filter: opacity(75%);
-  z-index: -1;
-  bottom: 0.1em;
-  transition: all 1s ease;
-  border-radius: 2px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-bottom-color: #ff3d00;
 }
 
-.link:hover::before {
-  content: " ";
-  position: absolute;
-  width: 110%;
-  margin-left: -5%;
-  height: 0.7em;
-  background-color: #e79f0d;
-  filter: opacity(90%);
-  z-index: -1;
-  bottom: 0.1em;
-  transition: all 1s ease;
-  border-radius: 2px;
+.fullheight {
+  min-height: 80vh;
 }
 
-.react-photo-album--photo {
-  filter: opacity(100%);
-  transition: 600ms ease-out;
-}
-
-.react-photo-album--photo:hover {
-  filter: opacity(60%);
-  transition: 300ms ease-in;
-}
-
-.footer-link {
-  transition: all 500ms ease;
-  border-radius: 3px;
-  color: black;
-}
-
-.footer-link svg {
-  height: 24px;
-  vertical-align: middle;
-  padding: 3px;
-}
-
-.footer-link:hover {
-  transition: all 500ms ease;
-  background-color: #e79f0d;
-}
-
-@media (max-width: 768px) {
-  .footer-link svg {
-    height: 18px;
-    padding: 2px;
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
