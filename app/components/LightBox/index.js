@@ -7,11 +7,9 @@ import "yet-another-react-lightbox/styles.css";
 
 const LightBox = ({ open, setOpen, images, index }) => {
   const [maxZoomPixelRatio, setMaxZoomPixelRatio] = useState(2);
-
   return (
     <Lightbox
       open={open}
-      i
       close={() => setOpen(false)}
       slides={images}
       index={index}

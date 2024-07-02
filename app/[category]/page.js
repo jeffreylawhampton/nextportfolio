@@ -5,8 +5,8 @@ import { getCloudinaryImages } from "@/lib/getCloudImages";
 export const dynamicParams = false;
 
 export const generateStaticParams = async () => {
-  return categories.map(({ name }) => ({
-    category: name,
+  return categories.map((category) => ({
+    category,
   }));
 };
 
