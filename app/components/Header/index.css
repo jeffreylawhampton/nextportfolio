@@ -48,7 +48,7 @@
 }
 
 .link:hover::before,
-.link.active::before {
+.link.selected::before {
   content: " ";
   height: 0.7em;
   background-color: var(--yellow);

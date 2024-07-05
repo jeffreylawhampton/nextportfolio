@@ -1,4 +1,4 @@
-import { getCloudinaryImages } from "@/lib/getCloudImages";
+import { getImages } from "./actions";
 import PhotoBody from "./components/PhotoBody";
 
 export const metadata = {
@@ -6,13 +6,17 @@ export const metadata = {
   description: "My photo portfolio. Hope you like dogs.",
 };
 
-export const viewport = {
-  initialScale: 1,
-  width: "device-width",
-};
-
 const Page = async () => {
-  return <PhotoBody images={await getCloudinaryImages("tags", "featured")} />;
+  const { images, next_cursor } = await getImages("tags", "featured");
+
+  return (
+    <PhotoBody
+      images={images}
+      next_cursor={next_cursor}
+      type="tags"
+      term="featured"
+    />
+  );
 };
 
 export default Page;
