@@ -8,8 +8,8 @@ const MenuDesktop = ({ menuItems, path }) => {
       <Link
         href="/"
         key="home"
-        className={`${
-          path && "link"
+        className={`link ${
+          !path && "selected"
         } relative font-bold text-2xl lg:text-3xl text-left uppercase tracking-tight leading-none`}
       >
         Jeff Hampton

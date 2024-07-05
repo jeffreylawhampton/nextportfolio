@@ -34,7 +34,7 @@ const Header = ({ hasAccess, categories }) => {
         key={category}
         href={category}
         onClick={handleClose}
-        className={`${linkMargin} link ${path === category ? "active" : ""}`}
+        className={`${linkMargin} link ${path === category ? "selected" : ""}`}
       >
         <div className="flex gap-1 items-center">
           {category}

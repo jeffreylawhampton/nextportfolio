@@ -19,8 +19,7 @@
   transition: all 200ms ease;
 }
 
-.footer-link:hover::before,
-.footer-link.active::before {
+.footer-link:hover::before {
   content: " ";
   height: 0.9em;
   background-color: var(--yellow);
