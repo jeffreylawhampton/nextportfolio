@@ -14,7 +14,9 @@ const RootLayout = async ({ children }) => {
     <html lang="en">
       <body className="px-4 lg:px-4 xl:px-6">
         <Header hasAccess={hasAccess} categories={categories} />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
+        <Suspense fallback={<Loading />}>
+          <main className="min-h-[81vh]">{children}</main>
+        </Suspense>
         <Footer />
       </body>
     </html>

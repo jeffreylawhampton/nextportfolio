@@ -1,5 +1,4 @@
 "use client";
-
 import PhotoAlbum from "react-photo-album";
 import CloudImage from "../CloudImage";
 
