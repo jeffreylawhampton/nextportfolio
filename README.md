@@ -1,2 +1,2 @@
 Hello! I'm Jeff Hampton. This is my photo portfolio site built with NextJs and Tailwind, with Cloudinary for image uploading/hosting and Reflow Auth for password protecting family photos. Feel free to visit at https://jeffreyhampton.com. Hope you like dogs.
-![Mockup of photo portfolio site on Macbook]([http://url/to/img.png](https://res.cloudinary.com/dgswa3kpt/image/upload/v1728700362/ew5t7czadvsxnyyni3jg.png))
+![Photo portfolio site on Macbook](https://res.cloudinary.com/dgswa3kpt/image/upload/v1728700362/ew5t7czadvsxnyyni3jg.png)
