@@ -10,7 +10,7 @@ This is a portfolio site I made as an outlet for the unreasonable number of gold
 - Reflow Auth
 
 ## Live Demo
-You can view the site at  Feel free to visit at [jeffreyhampton.com](https://jeffreyhampton.com/). Hope you like dogs.
+You can view the site at [jeffreyhampton.com](https://jeffreyhampton.com/). Hope you like dogs.
 
 ## Getting Started
 ### Image Hosting
