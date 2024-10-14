@@ -24,6 +24,7 @@ The project uses Reflow Auth to restrict access to family photos to people with 
 `cd photoportfolio`\
 `npm install`\
 `npm run dev`\
+
 Your project should then be live at [localhost:3000](https://localhost:3000/).
 
 ## License
