@@ -20,10 +20,10 @@ Cloudinary has a terrific SDK and a generous free tier. Follow the developer doc
 The project uses Reflow Auth to restrict access to family photos to people with a password, so you can skip this step if your site will be fully visible. If you do, follow the [Reflow developer documentation](https://reflowhq.com/learn/how-to-password-protect-a-nextjs-web-app/) for password protecting urls You'll need to add the hashed passphrase, session secret, and project ID to your .env.
 
 ### Clone and Run
-`git clone https://github.com/jeffreylawhampton/photoportfolio.git<br>
-cd photoportfolio<br>
-npm install<br>
-npm run dev`
+`git clone https://github.com/jeffreylawhampton/photoportfolio.git`
+`cd photoportfolio`
+`npm install`
+`npm run dev`
 Your project should then be live at [localhost:3000](https://localhost:3000/).
 
 ## License
