@@ -23,7 +23,7 @@ The project uses Reflow Auth to restrict access to family photos to people with 
 `git clone https://github.com/jeffreylawhampton/photoportfolio.git`\
 `cd photoportfolio`\
 `npm install`\
-`npm run dev`\
+`npm run dev`
 
 Your project should then be live at [localhost:3000](https://localhost:3000/).
 
