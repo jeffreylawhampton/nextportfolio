@@ -1,10 +1,30 @@
+# Photo Portfolio
+This is a portfolio site I made as an outlet for the unreasonable number of golden retriever photos I've taken. It uses React and Next.js, with Cloudinary for image uploading and transformations, and Reflow Auth for simple passsword protection of family photos.
+
+![Photo portfolio site on Macbook](https://res.cloudinary.com/dgswa3kpt/image/upload/v1728758520/vzructatvhk52p4buetd.png)
 
 ## Built With
-- <img alt="HTML 5 badge" src="https://res.cloudinary.com/dgswa3kpt/image/upload/v1728759675/html5badge_z3kz1r.png" width="75" height="25">
-- <img alt="React badge" src="https://res.cloudinary.com/dgswa3kpt/image/upload/v1728759828/reactbadge_xhbcnt.png" width="75" height="25">
-- <img alt="NextJS badge" src="https://res.cloudinary.com/dgswa3kpt/image/upload/v1728759674/nextjsbadge_o7y9vf.png" width="75" height="25">
-- <img alt="Tailwind CSS badge" src="https://res.cloudinary.com/dgswa3kpt/image/upload/v1728759675/tailwindtag_tn2p3k.png" width="75" height="25">
+- React
+- Next.js
+- Tailwind CSS
+- Reflow Auth
 
 ## Live Demo
 You can view the site at  Feel free to visit at [jeffreyhampton.com](https://jeffreyhampton.com/). Hope you like dogs.
-![Photo portfolio site on Macbook](https://res.cloudinary.com/dgswa3kpt/image/upload/v1728758520/vzructatvhk52p4buetd.png)
+
+## Getting Started
+### Image Hosting
+Cloudinary has a terrific SDK and a generous free tier. Follow the developer documentation to create a [Cloudinary developer account](https://cloudinary.com/documentation/how_to_integrate_cloudinary), then add your cloud name, API key, preset, and cloud secret in your .env file.
+
+### Authentication
+The project uses Reflow Auth to restrict access to family photos to people with a password, so you can skip this step if your site will be fully visible. If you do, follow the [Reflow developer documentation](https://reflowhq.com/learn/how-to-password-protect-a-nextjs-web-app/) for password protecting urls You'll need to add the hashed passphrase, session secret, and project ID to your .env.
+
+### Clone and Run
+`git clone https://github.com/jeffreylawhampton/photoportfolio.git
+cd photoportfolio
+npm install
+npm run dev`
+Your project should then be live at [localhost:3000](https://localhost:3000/).
+
+## License
+This project is licensed under the terms of the MIT license. 
